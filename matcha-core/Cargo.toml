@@ -1,0 +1,27 @@
+[package]
+name = "matcha-core"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+matcha-common = { path = "../matcha-common" }
+tokio = { workspace = true }
+dashmap = { workspace = true }
+parking_lot = { workspace = true }
+uuid = { workspace = true }
+tracing = { workspace = true }
+serde = { workspace = true }
+chrono = { workspace = true }
+
+# 性能优化依赖
+crossbeam = { workspace = true }
+metrics = "0.22"
+metrics-exporter-prometheus = "0.13"
+
+
+# 安全和加密
+argon2 = "0.5"
+ring = "0.17"
+base64 = "0.21"
+serde_json = { workspace = true }
+
